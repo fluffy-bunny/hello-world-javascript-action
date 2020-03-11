@@ -1,8 +1,17 @@
 {
   "name": "hello-world-javascript-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "This action prints \"Hello World\" or \"Hello\" + the name of a person to greet to the log.",
   "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.0",
+    "@zeit/ncc": "^0.21.1",
+    "typescript": "^3.8.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,9 +25,5 @@
   "bugs": {
     "url": "https://github.com/fluffy-bunny/hello-world-javascript-action/issues"
   },
-  "homepage": "https://github.com/fluffy-bunny/hello-world-javascript-action#readme",
-  "dependencies": {
-    "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1"
-  }
+  "homepage": "https://github.com/fluffy-bunny/hello-world-javascript-action#readme"
 }
