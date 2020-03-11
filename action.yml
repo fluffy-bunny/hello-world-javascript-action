@@ -5,9 +5,14 @@ inputs:
     description: 'Who to greet'
     required: true
     default: 'World'
+  creds:
+    description: 'Paste output of `az ad sp create-for-rbac` as value of secret variable: AZURE_CREDENTIALS'
+    required: true
 outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
   using: 'node12'
   main: 'dist/index.js'
+
+  
